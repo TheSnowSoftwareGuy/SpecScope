@@ -1,0 +1,3 @@
+"""
+SpecScope backend package.
+"""

@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - SQLITE_PATH=/data/specscope.db
+      - STORAGE_PATH=/data/storage
+      - ALLOWED_ORIGINS=http://localhost:5173
+    volumes:
+      - ./data:/data
+    ports:
+      - "8000:8000"

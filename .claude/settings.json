@@ -1,0 +1,5 @@
+{
+    "projectName": "SpecScope MVP",
+    "language": "python",
+    "testCommand": "bash scripts/test_local.sh"
+  }
